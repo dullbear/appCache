@@ -34,6 +34,8 @@ FALLBACK:
 
 window.applicationCache 对象是对浏览器的应用缓存的编程访问方式。其 status 属性可用于查看缓存的当前状态：
 
+    
+``` 
 UNCACHED(未缓存)
     一个特殊的值，用于表明一个应用缓存对象还没有完全初始化。
     
@@ -51,17 +53,6 @@ UPDATEREADY(更新就绪)
 
 OBSOLETE(废弃)
     应用缓存现在被废弃。
-    
-```   
-var appCache = window.applicationCache;
-
-appCache.update(); // Attempt to update the user's cache.
-
-...
-
-if (appCache.status == window.applicationCache.UPDATEREADY) {
-  appCache.swapCache();  // The fetch was successful, swap in the new cache.
-}
 ```
     
 事件
@@ -150,6 +141,10 @@ $("#check").click(function() {
 	cache();
 });
 ```
+
+参考网址：http://www.cnblogs.com/blackbird/archive/2012/06/12/2546751.html
+          http://www.html5rocks.com/zh/tutorials/appcache/beginner/#toc-status
+          https://developer.mozilla.org/zh-CN/docs/HTML/Using_the_application_cache
 
 
 
