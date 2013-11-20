@@ -1,10 +1,8 @@
 html5 离线存储
 ========
 
-如何使用application cache
-----
-
 manifest文件结构
+---
 
 ```
 CACHE MANIFEST
@@ -105,6 +103,9 @@ update() 	发起应用程序缓存下载进程
 abort() 	取消正在进行的缓存下载
 
 swapcache() 	切换成本地最新的缓存环境
+
+实例
+---
 
 ```
 var flag = false;
